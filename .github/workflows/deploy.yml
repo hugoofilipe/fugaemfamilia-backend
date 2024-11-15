@@ -31,10 +31,10 @@ jobs:
       id: bump_version
       uses: anothrNick/github-tag-action@v1.36.0
       env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-      tag_prefix: 'v'
-      release_branches: master
+        tag_prefix: 'v'
+        release_branches: master
 
     - name: Push changes
       run: |
