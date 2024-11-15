@@ -1,3 +1,5 @@
+version = '1.0.0'
+
 from flask import Flask, jsonify
 from flask_cors import CORS
 from models.reservation import Reservation  # Adjust the import path based on your project structure
