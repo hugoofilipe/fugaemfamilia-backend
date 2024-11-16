@@ -1,4 +1,4 @@
-name: Version and Release
+name: Deploy
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  version-and-release:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
