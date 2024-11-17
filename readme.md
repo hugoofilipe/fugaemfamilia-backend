@@ -53,6 +53,13 @@ python3 app.py
 - The frontend should be accessible at the subdomain "backoffice" of the host machine.
 - The backend should be accessible at the subdomain "backoffice" of the host machine.
 
+## Environment Variables
+Dont forget to set the environment variables in the .env file in the root folder of the backend project. The .env file should contain the following variables:
+```
+SECRET_KEY=your_secret_key
+AUTH_PASSWORD=your_auth_password
+```
+
 # Installation and Setup Instructions for local machine
 
 This project was bootstrapped with [Vue CLI], so it uses javascript and vuejs. To install and run the project, you need to have nodejs and npm installed on your local machine.
@@ -69,6 +76,8 @@ After creating the subdomain, you need to create a .htaccess file in the dist fo
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule . /index.html [L]
+</IfModule>
+```
 
 
 ## FAQ
@@ -80,3 +89,5 @@ After creating the subdomain, you need to create a .htaccess file in the dist fo
     - pip install -r requirements.txt
     - python3 app.py
 
+- **How do deal with CPANEL error**
+    - Maybe you need to remove the .htaccess file and passeger_wsgi.py file from the root folder of the backend project.
