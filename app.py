@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": ["https://fugaemfamilia-frontoffice.huna.pt", "http://localhost:5000", "http://192.168.126.2:8080"
+CORS(app, resources={r"/api/*": {"origins": ["https://fugaemfamilia-frontoffice.huna.pt", "http://localhost:5000", "http://192.168.152.2:8080"
 , "http://192.168.1.184:8080"], "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"], "allow_headers": ["Content-Type", "Authorization"]}})
 SECRET_KEY = os.getenv('SECRET_KEY')
 AUTH_PASSWORD = os.getenv('AUTH_PASSWORD')

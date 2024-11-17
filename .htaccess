@@ -1,6 +1,6 @@
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
-PassengerAppRoot "/home/anaehugo/fugaemfamilia/backend_v2"
+PassengerAppRoot "/home/anaehugo/fugaemfamilia/backoffice"
 PassengerBaseURI "/backoffice"
-PassengerPython "/home/anaehugo/virtualenv/fugaemfamilia/backend_v2/3.12/bin/python"
-PassengerAppLogFile "/home/anaehugo/fugaemfamilia/backend_v2/backoffice.log"
+PassengerPython "/home/anaehugo/virtualenv/fugaemfamilia/backoffice/3.12/bin/python"
+PassengerAppLogFile "/home/anaehugo/fugaemfamilia/backoffice/backoffice.log"
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END

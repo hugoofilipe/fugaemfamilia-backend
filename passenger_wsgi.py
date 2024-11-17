@@ -4,7 +4,7 @@ import sys
 import os
 
 # Add the project directory to the sys.path
-project_home = u'/home/anaehugo/fugaemfamilia/backend_v2/passenger_wsgi.py'
+project_home = u'/home/anaehugo/fugaemfamilia/backoffice/passenger_wsgi.py'
 if project_home not in sys.path:
     sys.path = [project_home] + sys.path
 
