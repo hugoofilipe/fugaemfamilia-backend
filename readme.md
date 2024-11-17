@@ -53,6 +53,9 @@ python3 app.py
 - The frontend should be accessible at the subdomain "backoffice" of the host machine.
 - The backend should be accessible at the subdomain "backoffice" of the host machine.
 
+## Production
+After you commit and push the changes to the repository, github actions will automatically build, bump the version and create a release. After this you need to go to the cpanel and update repository to the latest version (branch master) and restart the backend application. To check if the backend is running correctly, you can use the endpoit http://fugaemfamilia.huna.pt/backoffice/version to check the version of the backend is the latest.
+
 ## Environment Variables
 Dont forget to set the environment variables in the .env file in the root folder of the backend project. The .env file should contain the following variables:
 ```
