@@ -130,6 +130,10 @@ def read_from_google_spreadsheets(language = 'pt'):
 def ping():
     return jsonify({"message": "Pong"})
 
+@app.route('/version')
+def get_version():
+    return jsonify({"version": version})
+
 @app.route('/api/reservation')
 def get_reservation():
     name = request.args.get('name')
