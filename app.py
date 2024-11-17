@@ -1,5 +1,5 @@
 # app.py
-version='1.0.2'
+version='1.0.3'
 
 from flask import Flask, jsonify
 from flask_cors import CORS
